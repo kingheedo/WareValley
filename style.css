@@ -1,0 +1,103 @@
+.header .container{height: 100%; display: flex; width: 1280px; margin: 0 auto; position: relative; text-align: center; }
+
+/*헤더*/
+.header{opacity: 0.9; background: #222; width: 100%; position: fixed; z-index: 1000; height: 120px; transition: all 0.4s ease-in-out;}
+
+.container .logo{  transition: transform 0.4s ease-in-out; transform: translateY(28%);}
+.container .logo a{font-size: 34px; font-weight: 600; font-family: 'Raleway';  color: #fff; display: inline-block; line-height: 0.82em; transition: transform 0.4s ease-in-out;}
+.container .logo a span{padding-left: 2.05em;  font-family: 'Raleway'; color: #fff; }
+
+.menu_setting{display: flex; position: absolute; right: 4%;}
+ .menu_setting li{}
+ .menu_setting li a{font-size: 12px; font-weight: bold; padding: 0.25em 1.83em; color: #a3a7aa; font-family: 'Noto Sans CJK KR';}
+ .menu_setting li a i{padding-right: 0.25rem;}
+
+.menu_info { display: flex; position: absolute; top: 77px; right: 8.75rem; transition: all 0.4s ease }
+.menu_info li{}
+.menu_info .hidden_menu{display: none; transition: all 0.4s ease-in-out;}
+.menu_info li a{padding: 0.562em 3.82em; font-weight: 600; font-size: 14px;  color: #fff;font-family: 'Noto Sans CJK KR';}
+
+.container .mNav {position: absolute; top: 3.7rem; right: 2.5rem; cursor: pointer; 
+}
+.container .mNav > div{width: 2.3rem; height: 0.19rem; background-color: #ffffff; margin: 0.5em; transition: all 0.4s ease;}
+
+
+
+.header.active {height: 480px; background-color: #f5f6f8; }
+.header.active .mNav > div{background-color: #646464;}
+.header.active .mNav .line1{transform: rotate(-45deg) translate(-7px,9px);}
+.header.active .mNav .line2{opacity: 0;}
+.header.active .mNav .line3{transform: rotate(45deg) translate(-7px,-9px);}
+
+.header.active .container .logo {transform: translateY(38%);}
+.header.active .container .logo a{color: #949592; font-size: 55px;}
+.header.active .container .logo a span{color: #949592;}
+
+
+
+.header.active .menu_info .hidden_menu{display: block;}
+.header.active .menu_info li a{color: #110c0c; display: inline-block;}
+.header.active .menu_info .hidden_menu li{text-align: left; margin-left: 3.0em;}
+.header.active .menu_info .hidden_menu li:first-child a{margin-top: 41px; }
+.header.active .menu_info .hidden_menu li a{font-size: 11px; padding: 0; margin: 12px; color: #646464; }
+
+
+
+
+
+/*배너*/
+
+@media(max-width:1280px){
+    .header .container {width: 100%; }
+}
+
+
+@media(max-width:960px){
+     .menu_info li a {padding: 0 1.25rem;}
+}
+
+
+@media(max-width:720px){
+    .header{height: 50px; }
+    .header.active{ height: 100%; position: absolute; right: 0; width: 85%; }
+    .header.active .container {overflow: hidden; height: 100vh;}
+    .header.active .container .logo {transform: translateY(2%);}
+    .header.active .container .logo a{font-size: 22px;}
+    .header.active .container .mNav {bottom: 1.07rem;}
+    
+    
+    .menu_setting li {display: none;}
+    
+    .header.active .menu_setting{display: flex; justify-content: center; align-items: center; width: 100%; bottom: 0; left: 0px; }
+    .header.active .menu_setting .login {display: block; width: 100%;}
+    .header.active .menu_setting .login a {display: block; width: 100%; height: 50px; 
+   line-height: 53px; border-top: 1px solid #DCDCDC; border-right: 1px solid #DCDCDC; font-weight: 400;}
+    .header.active .menu_setting .language {display: block;width: 100%;}
+    .header.active .menu_setting .language a {display: block; width: 100%; height: 50px; 
+    line-height: 53px; border-top: 1px solid #DCDCDC; font-weight: 400;}
+    
+    
+    .menu_info {display: none; }
+    .header.active .menu_info{display: block; right: 0; left: 38px; top: 84px;}
+    .header.active .menu_info .hidden_menu {display: none;}
+    .header.active .menu_info li {text-align: left;    }
+    .header.active .menu_info li a{font-size: 20px; padding: 13px; letter-spacing: 2px; font-weight: 400;}
+    
+    .header .container .logo{transform: translateY(0%);}
+    .header .container .logo a{ font-size: 13px;}
+    .header .container .mNav{top: 0.85rem;}
+    
+    .container .mNav > div {width: 1.31rem; height: 0.06rem; margin: 0.32em;}
+    .header.active .mNav .line1{transform: rotate(-45deg) translate(-3px,6px);}
+    .header.active .mNav .line3{transform: rotate(45deg) translate(-3px,-6px);}
+    
+    .banner{height: 25rem;}
+}
+
+@media(max-width:600px){
+
+}
+
+@media(max-width:480px){
+  
+}
