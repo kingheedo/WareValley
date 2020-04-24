@@ -294,11 +294,11 @@
 }
 
 /*상품*/
-#products {padding-bottom: 108px; background-color: #fff;}
-.products-container { width: 1440px; max-width: 100%; margin: 0 auto; text-align: center; overflow: hidden; }
+#products {padding-bottom: 108px; background-color: #fff; overflow: hidden;}
+.products-container { width: 1440px; max-width: 100%; margin: 0 auto; text-align: center;  }
 .products-container .products-name{text-align: center; padding-top: 104px; padding-bottom: 48px;
 font-weight: bold; }
-.products-container .swiper-container2 { 
+.products-container .swiper-container2 {     
     width: 100%; height: 100%; 
 }.products-container .swiper-wrapper { 
     padding-bottom: 44px;
@@ -352,42 +352,97 @@ font-weight: bold; }
 color: #ffffff;
 }
 /*컨텐츠1*/
-#contents1{background-color: #f5f6f8;}
-#contents1 .container{}
-.contents1{}
-.contents1 .content-box1{display: flex;}
-.contents1 .content-box1 .content{background-color: #9f9f9f; margin-right: 2%; width: 30.666%;}
-.contents1 .content-box1 .content h3{color: #fff; font-weight: bold;}
-.contents1 .content-box1 .content p{color: #fff; font-size: 15px; padding-top: 20px; width: 300px;}
-.contents1 .content-box1 .content1{margin-left: 2%;}
-.contents1 .content-box1 .content2{ padding-top: 50px; padding-left: 50px;}
-.contents1 .content-box1 .content2 h3{}
-.contents1 .content-box1 .content2 p{display: inline-block;}
-.contents1 .content-box1 .content2 figure{float: right; margin-bottom: 10px; transform: translateY(20%);}
-.contents1 .content-box1 .content2 img{width: 115px; height: 104px; } 
-.contents1 .content-box1 .content3{}
-.contents1 .content-box1 .content3 img{width: 115px; height: 104px;}
+#contents1{background-color: #f5f6f8; }
+#contents1 .container{
+    width: 1542px;
+    margin: 0 auto;
+    position: relative;
+   }
+.contents1{padding-top: 110px; padding-bottom: 70px;}
+.contents1 .content-box1{display: flex; margin-bottom: 39px;}
+.contents1 .content-box1 .content{ background-color: #9f9f9f; margin-right: 1.5%; width: 32%;
+display: inline-block;}
+.contents1 .content-box1 .content h3{color: #fff; font-weight: bold; cursor: pointer;}
+.contents1 .content-box1 .content p{ height: 100%; max-width: calc(100% - 110px);  cursor: pointer; color: #fff; font-size: 14px; padding-top: 12px;  letter-spacing: 0.4px; line-height: 22px;}
+
+
+.contents1 .content-box1 .content1{
+    overflow: hidden;
+    margin-left: 1.5%; 
+   padding: 30px 40px;
+     }
+.contents1 .content-box1 .content1 h3{}
+.contents1 .content-box1 .content1 p{
+
+    }
+
+.contents1 .content-box1 .content2{
+    padding: 30px 40px; 
+    position: relative;}
+.contents1 .content-box1 .content2 p{
+    }
+.contents1 .content-box1 .content2 figure {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+.contents1 .content-box1 .content2 img{
+    width: 102px; 
+    height: 96px;
+    
+}
+
+.contents1 .content-box1 .content3{    padding: 30px 40px; position: relative;}
+.contents1 .content-box1 .content3 h3{font-size: 20px;}
+.contents1 .content-box1 .content3 p{ }
+.contents1 .content-box1 .content3 figure{position: absolute; top: 30px; right: 40px;}
+.contents1 .content-box1 .content3 img{width: 102px; height: 96px;}
 
 
 
-.contents1 .content-box2 .board{}
+.contents1 .content-box2 { padding: 26px 53px; display: flex; justify-content: space-between;}
+.contents1 .content-box2 h3 {font-size: 21px; font-weight: bold;}
+.contents1 .content-box2 li a{font-size: 18px;}
+.contents1 .content-box2 ul{margin-top: 12px;}
+.contents1 .content-box2 li{padding: 18px 0; border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+.contents1 .content-box2 li a{color: #646464;}
+
+
+.contents1 .content-box2 .board{ width: 47%; display: inline-block; }
+.contents1 .content-box2 .board h3{}
 .contents1 .content-box2 .board ul{}
 .contents1 .content-box2 .board li{}
 
-.contents1 .content-box2 .News {}
+.contents1 .content-box2 .News {width: 47%; }
+.contents1 .content-box2 .News h3 {}
 .contents1 .content-box2 .News ul {}
 .contents1 .content-box2 .News li{}
 .contents1 .content-box2 .News li a{}
 
 
+/*컨텐츠2*/
+#contents2{background-color: #fff;}
+#contents2 .container {width: 1474px; margin: 0 auto; text-align: center;}
+.contents2{}
+.contents2 h3 {display: flex; flex-direction: column;}
+.contents2 h3 strong {}
+.contents2 h3 span {}
+.contents2 .contents2_inner{height: 450px; background: url(./assets/slide_about01.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;
+display: flex; align-items:flex-end; justify-content: space-around;}
+.contents2 .contents2_inner figcaption{display: flex; justify-content: center; align-items: center;}
+.contents2 .contents2_inner figcaption h4{}
+.contents2 .contents2_inner figcaption p{text-align: left;}
 
 
 
 
 
-
-
-
+@media (max-width: 1580px) {
+    
+    #contents1 .container{width: 100%;}
 
 
 
@@ -565,7 +620,7 @@ color: #ffffff;
         padding: 0;
     
     }
-    .slider .ss3 .slide-content1 {width: 253px;height: 76px;}
+    .slider .ss3 .slide-content1 {width: 253px; height: 76px;}
     .slider .ss3 .slide-content2 p{font-size: 16px;}
     .slider .ss3 {align-items: center;}
     .slider .ss3 .slide-content2 .content-more {padding-top: 93px; }
@@ -582,6 +637,25 @@ color: #ffffff;
     .products-container .swiper-slide.ss5 .slide-image{width: 150px; height: 150px;}
     .products-container .swiper-slide.ss6 .slide-image{width: 150px; height: 150px;}
     .products-container .swiper-slide.ss7 .slide-image{width: 150px; height: 150px;}
+    
+    #contents1{padding-top: 64px;}
+    .contents1 .content-box1{flex-direction: column; }
+    .contents1 .content-box1 .content{padding: 20px; width: 94%; margin-bottom: 10px; margin-left: 3%;
+   }
+    .contents1 .content br{display: none;}
+    .contents1 .content-box1 .content p{font-size: 14px; padding-top: 13px;
+        max-width: calc(100% - 100px);
+    }
+    .contents1 .content-box1 .content img{width: 62px; height: 58px; }
+    .contents1 .content-box1 .content figure{width: 62px; height: 58px;padding-left: 1px;}
+    
+    .contents1 .content-box2 {flex-direction: column;}
+    .contents1 .content-box1 {margin-bottom: 18px;}
+    .contents1 .content-box2{padding: 0 22px;}
+    .contents1 .content-box2 .board{width: 100%;}
+    .contents1 .content-box2 .News{width: 100%;}
+    .contents1 .content-box2 li {padding: 9px 0;}
+    .contents1 .content-box2 li a {font-size: 15px;}
 }
 
 @media (max-width: 600px) {}
