@@ -442,6 +442,38 @@ display: flex; align-items:flex-end;}
 .contents2 .contents2_inner figcaption p{text-align: left; color: #fff; font-size: 14px; padding-left: 38px;}
 
 
+/*푸터*/
+#footer{}
+#footer .container{ width: 100%; margin: 0 auto; text-align: center;}
+.footer {padding: 45px 0; background-color: #5a5a5a;}
+.footer .footer_notice {display: flex; justify-content: center; overflow: hidden;  }
+.footer .footer_notice li {font-size: 14px; margin-right: 10px;}
+.footer .footer_notice li a {font-weight: 300; color: #ffffff; display: inline-block; padding: 5px 18px; background-color: #5a5a5a; border-radius: 16px; border: 1px solid #9c9c9c;}
+.footer .footer_notice li a i {margin-left: 8px;}
+.footer .footer_info {padding-top: 19px; padding-bottom: 7px; display: flex; justify-content: center;}
+.footer .footer_info li { font-weight: 300;color: #c8c8c8; font-size: 12px; position: relative; padding: 0 7px; letter-spacing: 0.5px;}
+.footer .footer_info li br{display: none;}
+.footer .footer_info li:after {
+    content: '';
+    top: 4px;
+    right: 0;
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    display: inline-block;
+    background-color: #c8c8c8;
+}
+
+.footer .footer_info li:last-child::after{display: none;}
+.footer p {color: #c8c8c8;font-size: 12px; font-weight: 300; letter-spacing: 0.3px;}
+.footer .secure_icon {}
+.footer .secure_icon ul {background-color: #fff; width: 200px; display: inline-block; line-height: 20px; border-radius: 24px; padding: 5px 0; margin-top: 34px;}
+.footer .secure_icon ul .icon1 {width: 29px; height: 33px; display: inline-block; background: url(./assets/ucert_blue.gif); background-size: 100% 100%; background-repeat: no-repeat; margin-right: 14px;}
+.footer .secure_icon ul .icon2 {width: 74px; height: 33px; display: inline-block; background: url(./assets/alphassl_seal.gif); display: inline-block; background-size: 100% 100%; background-repeat: no-repeat;margin-right: 14px;}
+.footer .secure_icon ul .icon3 {width: 30px;
+    height: 32px; display: inline-block; background: url(./assets/s_kisa.gif); display: inline-block; background-size: 100% 100%; background-repeat: no-repeat;}
+
+
 
 
 
@@ -677,7 +709,22 @@ display: flex; align-items:flex-end;}
     .contents2 .contents2_inner{height: 330px;}
     .contents2 .contents2_inner figcaption h4 {font-size: 18px; padding-bottom: 7px; padding-left: 27px;}
     .contents2 .contents2_inner figcaption p {font-size: 12px;padding-left: 27px;}
-    
+    .footer {padding-top: 0;padding-bottom: 45px;}
+    .footer .footer_notice{flex-direction: column; }
+    .footer .footer_notice li{margin-right: 0;}
+    .footer .footer_notice li a {padding: 16px 18px; background-color: #545454;}
+    .footer .footer_info li:nth-child(2){}
+    .footer .footer_notice li a{border: 0; display: block;font-size: 15px; border-radius: 0; }
+    .footer .footer_info{flex-direction: column;}
+    .footer .footer_info li {color: #fff; font-size: 13px; padding: 6px 0;}
+    .footer p {color: #fff; font-size: 13px;}
+    .footer .footer_info li br{display: block;}
+    .footer p{font-weight: 300;}
+    .footer .secure_icon ul {width: 155px;}
+    .footer .secure_icon ul .icon{}
+    .footer .secure_icon ul .icon1 {width: 23px; height: 23px; margin-right: 11px;}
+    .footer .secure_icon ul .icon2{ width: 51px; height: 25px; margin-right: 11px;}
+    .footer .secure_icon ul .icon3{width: 24px;height: 24px;}
     
 }
 
